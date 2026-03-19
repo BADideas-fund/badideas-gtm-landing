@@ -1,0 +1,12 @@
+{
+  "name": "badideas-gtm-landing",
+  "version": "1.0.0",
+  "description": "BADideas.fund GTM A/B landing pages for TechChill",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
