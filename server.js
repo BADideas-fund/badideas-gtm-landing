@@ -66,13 +66,8 @@ app.post('/api/feedback', (req, res) => {
   res.json({ success: true });
 });
 
-// Admin endpoint to view submissions (basic, no auth for now)
-app.get('/api/submissions', (req, res) => {
-  res.json(submissions);
-});
-app.get('/api/feedbacks', (req, res) => {
-  res.json(feedbacks);
-});
+// No read endpoints: submissions and feedback were readable by anyone, with no auth
+// (security audit 2026-10-24, I-132). They are in the logs and the webhooks.
 
 // Root redirect
 app.get('/', (req, res) => {
